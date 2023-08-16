@@ -23,7 +23,9 @@ def print_rss_header():
 <channel>
 <title>Firefox Releases</title>
 <link>https://ftp.mozilla.org/pub/firefox/releases/</link>
-<description>Firefox Releases</description>''')
+<description>Firefox Releases</description>
+<atom:link href="https://yld.me/raw/firefox-rss" rel="self" type="application/rss+xml" />
+''')
 
 def print_rss_item(release):
     response = requests.get(f'https://www.mozilla.org/en-US/firefox/{release}/releasenotes/')
@@ -37,9 +39,10 @@ def print_rss_item(release):
 
     print('''<item>
 <title>Firefox {release}</title>
-<author>Mozilla</author>
+<author>firefox@mozilla.org (Firefox)</author>
 <link>https://www.mozilla.org/en-US/firefox/{release}/releasenotes/</link>
 <pubDate>{pub_date}</pubDate>
+<guid isPermaLink="false">{release}</guid>
 </item>'''.format(release=release, pub_date=email.utils.format_datetime(pub_date)))
 
 def print_rss_footer():
