@@ -6,6 +6,6 @@ apparently they don't provide that themselves.
 It works by scraping the [Mozilla Firefox FTP](https://ftp.mozilla.org).
 
 You can find the generated feed here:
-[yld.me/raw/firefox-rss](https://yld.me/raw/firefox-rss).
+<strike>[yld.me/raw/firefox-rss](https://yld.me/raw/firefox-rss)</strike>.
 
-It is updated every **3** hours.
+<strike>It is updated every **3** hours</strike>.  It is now turned off :]
