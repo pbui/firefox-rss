@@ -1,0 +1,4 @@
+#!/bin/sh
+
+$(dirname $0)/firefox-rss.py >| \
+    $HOME/.config/yldme/uploads/firefox-rss

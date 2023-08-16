@@ -1,0 +1,10 @@
+[Unit]
+Description=Generate Firefox RSS
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=3hr
+Unit=firefox-rss.service
+
+[Install]
+WantedBy=default.target

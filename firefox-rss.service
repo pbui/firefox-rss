@@ -1,0 +1,6 @@
+[Unit]
+Description=Generate Firefox RSS
+
+[Service]
+Type=oneshot
+ExecStart=/home/pbui/src/personal/firefox-rss/firefox-rss.run
