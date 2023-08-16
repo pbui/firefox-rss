@@ -1,3 +1,5 @@
+<a href="http://validator.w3.org/check.cgi?url=https%3A//yld.me/raw/firefox-rss"><img src="valid-rss-rogers.png" alt="[Valid RSS]" title="Validate my RSS feed" /></a>
+
 # Firefox RSS
 
 A dumb script to generate a RSS feed for Mozilla Firefox releases, since
